@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Tabs Material</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="one">one</string>
+    <string name="two">two</string>
+    <string name="three">three</string>
+
+    <string-array name="array_bg_movie">
+        <item>#24c6d5</item>
+        <item>#57dd86</item>
+        <item>#ad7dcf</item>
+        <item>#ff484d</item>
+        <item>#fcba59</item>
+        <item>#24c6d5</item>
+    </string-array>
+
+    <string-array name="array_menu_title">
+        <item>Import</item>
+        <item>TopMovies</item>
+        <item>SlideShow</item>
+        <item>Tools</item>
+        <item>Share</item>
+        <item>Send</item>
+    </string-array>
+</resources>
