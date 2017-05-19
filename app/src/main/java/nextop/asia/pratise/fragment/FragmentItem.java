@@ -9,8 +9,11 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import nextop.asia.pratise.util.HeroesRequest;
 import nextop.asia.pratise.util.ItemsRequest;
+import nextop.asia.pratise.util.NewsRequest;
 import nextop.asia.pratise.util.SkillRequest;
+import nextop.asia.pratise.util.SupportSkillRequest;
 import pratice.asia.nextop.tabsmaterial.R;
 
 /**
@@ -22,7 +25,7 @@ public class FragmentItem extends Fragment {
     private LoaderManager.LoaderCallbacks<String> itemsListener = new LoaderManager.LoaderCallbacks<String>() {
         @Override
         public Loader<String> onCreateLoader(int id, Bundle args) {
-            return new SkillRequest(getContext(),"https://lienquan.garena.vn/tuong-chi-tiet/4");
+            return new SkillRequest(getContext(),"https://lienquan.garena.vn/trang-bi");
         }
 
         @Override
@@ -43,3 +46,4 @@ public class FragmentItem extends Fragment {
         return rootView;
     }
 }
+

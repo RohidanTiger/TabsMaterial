@@ -76,15 +76,26 @@ public class ItemsRequest extends AsyncTaskLoader<String> {
                 String name = element.getElementsByClass("name").html();
                 String desc = element.getElementsByClass("txt").html();
                 String tag = tags.get(id).html();
+                int type = 0;
+                if(tag.contains("cong")){
+                    type = 0;
+                }else if(tag.contains("phep")){
+                    type = 1;
+                }else if(tag.contains("thu")){
+                    type = 2;
+                }else if(tag.contains("toc-do")){
+                    type = 3;
+                }else type = 4;
+
 
                 if(tag.contains("cap-1")){
-                    Item item = new Item(id,name,desc,1);
+                    Item item = new Item(id,name,desc,1,type);
                     items.add(item);
                 }else if(tag.contains("cap-2")){
-                    Item item = new Item(id,name,desc,2);
+                    Item item = new Item(id,name,desc,2,type);
                     items.add(item);
                 }else {
-                    Item item = new Item(id,name,desc,3);
+                    Item item = new Item(id,name,desc,3,type);
                     items.add(item);
                 }
 
@@ -261,9 +272,8 @@ public class ItemsRequest extends AsyncTaskLoader<String> {
 
     public void writeToFile(String data) {
         // Get the directory for the user's public pictures directory.
-        final File path =
-                Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DCIM + "/LienQuan/");
-
+        final File path = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DCIM + "/LienQuan/");
+        //File path =  new File("/sdcard"+"/"+"LienQuan");
         // Make sure the path directory exists.
         if(!path.exists()) {
             // Make it, if it doesn't exit

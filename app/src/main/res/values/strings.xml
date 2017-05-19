@@ -26,4 +26,53 @@
         <item>Share</item>
         <item>Send</item>
     </string-array>
+
+    <string-array name="array_hero">
+        <item>Valhein</item>
+        <item>Thane</item>
+        <item>Veera</item>
+        <item>Lubo</item>
+        <item>Mina</item>
+        <item>Krixi</item>
+        <item>Mganga</item>
+        <item>Trieuvan</item>
+        <item>Omega</item>
+        <item>Kahlii</item>
+        <item>Zephys</item>
+        <item>Dieuthuyen</item>
+        <item>Chaugnar</item>
+        <item>Violet</item>
+        <item>Butterfly</item>
+        <item>Ormarr</item>
+        <item>Azzenka</item>
+        <item>Alice</item>
+        <item>Gildur</item>
+        <item>Yorn</item>
+        <item>Toro</item>
+        <item>Taara</item>
+        <item>Nakroth</item>
+        <item>Grakk</item>
+        <item>Aleister</item>
+        <item>Fennik</item>
+        <item>Lumburr</item>
+        <item>Natalya</item>
+        <item>Cresht</item>
+        <item>Jinna</item>
+        <item>Payna</item>
+        <item>Maloch</item>
+        <item>Ngokhong</item>
+        <item>Kriknak</item>
+        <item>Mortos</item>
+        <item>Slimz</item>
+        <item>Ilumia</item>
+        <item>Preyta</item>
+        <item>Skud</item>
+    </string-array>
+
+    
+    <string name="str_information">Thông tin</string>
+    <string name="str_skills">Kỹ năng</string>
+    <string name="str_guide">Hướng dẫn</string>
+
+
 </resources>

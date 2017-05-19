@@ -9,15 +9,17 @@ public class Item {
     private String name;
     private String desc;
     private int level;
+    private int type;
 
     public Item() {
     }
 
-    public Item(int id, String name, String desc, int level) {
+    public Item(int id, String name, String desc, int level, int type) {
         this.id = id;
         this.name = name;
         this.desc = desc;
         this.level = level;
+        this.type = type;
     }
 
     public int getId() {
@@ -50,5 +52,13 @@ public class Item {
 
     public void setLevel(int level) {
         this.level = level;
+    }
+
+    public int getType() {
+        return type;
+    }
+
+    public void setType(int type) {
+        this.type = type;
     }
 }

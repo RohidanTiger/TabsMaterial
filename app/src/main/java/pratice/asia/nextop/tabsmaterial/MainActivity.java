@@ -21,6 +21,7 @@ import android.widget.Toast;
 import nextop.asia.pratise.fragment.FragmentItem;
 import nextop.asia.pratise.fragment.ImportFragment;
 import nextop.asia.pratise.fragment.MovieFragment;
+import nextop.asia.pratise.fragment.ShareFragment;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -104,7 +105,7 @@ public class MainActivity extends AppCompatActivity
         } else if (id == R.id.nav_slideshow) {
             displayView(2);
         } else if (id == R.id.nav_manage) {
-
+            displayView(3);
         } else if (id == R.id.nav_share) {
 
         } else if (id == R.id.nav_send) {
@@ -130,7 +131,7 @@ public class MainActivity extends AppCompatActivity
                 fragment = new FragmentItem();
                 break;
             case 3:
-                //fragment = new CommunityFragment();
+                fragment = new ShareFragment();
                 break;
             case 4:
                 //fragment = new PagesFragment();
