@@ -44,7 +44,7 @@ public class SkillRequest extends AsyncTaskLoader<String> {
 
     @Override
     public String loadInBackground() {
-        for(int i = 1 ;i <= 39; i++){
+        for(int i = 1 ;i <= 41; i++){
             String url = "https://lienquan.garena.vn/tuong-chi-tiet/".concat(String.valueOf(i));
             Document doc = null;
             ArrayList<Skill> items = new ArrayList<>();

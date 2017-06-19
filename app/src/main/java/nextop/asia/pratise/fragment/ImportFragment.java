@@ -11,10 +11,10 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Toast;
 
-import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
+import nextop.asia.pratise.demo.TestDemo;
 import pratice.asia.nextop.tabsmaterial.R;
 
 /**
@@ -34,6 +34,8 @@ public class ImportFragment extends Fragment {
         super.onCreate(savedInstanceState);
 
         Toast.makeText(getContext(), "ONCREATE",Toast.LENGTH_SHORT).show();
+        TestDemo sort = new TestDemo();
+        sort.sort(new int[]{10, 7, 8, 9, 1, 5, 12, -1});
 
     }
 

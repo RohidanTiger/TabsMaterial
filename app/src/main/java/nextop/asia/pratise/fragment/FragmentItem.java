@@ -11,6 +11,7 @@ import android.widget.TextView;
 
 import nextop.asia.pratise.util.HeroesRequest;
 import nextop.asia.pratise.util.ItemsRequest;
+import nextop.asia.pratise.util.LoreRequest;
 import nextop.asia.pratise.util.NewsRequest;
 import nextop.asia.pratise.util.SkillRequest;
 import nextop.asia.pratise.util.SupportSkillRequest;
