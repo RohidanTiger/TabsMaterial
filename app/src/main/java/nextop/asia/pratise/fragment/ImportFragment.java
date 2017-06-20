@@ -6,6 +6,7 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.view.ViewPager;
 import android.support.v4.app.FragmentPagerAdapter;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -36,6 +37,7 @@ public class ImportFragment extends Fragment {
         Toast.makeText(getContext(), "ONCREATE",Toast.LENGTH_SHORT).show();
         TestDemo sort = new TestDemo();
         sort.sort(new int[]{10, 7, 8, 9, 1, 5, 12, -1});
+        Log.d("Xau doi xung:",sort.xauDoiXung("alevelb"));
 
     }
 
