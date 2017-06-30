@@ -12,9 +12,18 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Toast;
 
+import org.reactivestreams.Subscriber;
+import org.reactivestreams.Subscription;
+
 import java.util.ArrayList;
 import java.util.List;
 
+import io.reactivex.Observable;
+import io.reactivex.ObservableEmitter;
+import io.reactivex.ObservableOnSubscribe;
+import io.reactivex.Observer;
+import io.reactivex.disposables.Disposable;
+import io.reactivex.functions.Consumer;
 import nextop.asia.pratise.demo.TestDemo;
 import pratice.asia.nextop.tabsmaterial.R;
 
@@ -35,9 +44,9 @@ public class ImportFragment extends Fragment {
         super.onCreate(savedInstanceState);
 
         Toast.makeText(getContext(), "ONCREATE",Toast.LENGTH_SHORT).show();
-        TestDemo sort = new TestDemo();
-        sort.sort(new int[]{10, 7, 8, 9, 1, 5, 12, -1});
-        Log.d("Xau doi xung:",sort.xauDoiXung("alevelb"));
+        //TestDemo sort = new TestDemo();
+        //sort.sort(new int[]{10, 7, 8, 9, 1, 5, 12, -1});
+        //Log.d("Xau doi xung:",sort.xauDoiXung("alevelb"));
 
     }
 
@@ -62,6 +71,7 @@ public class ImportFragment extends Fragment {
         Toast.makeText(getContext(), "ONCREATEVIEW",Toast.LENGTH_SHORT).show();
 
         viewPager.setOffscreenPageLimit(3);
+
         return rootView;
     }
 
@@ -85,8 +95,6 @@ public class ImportFragment extends Fragment {
     public void onViewStateRestored(Bundle savedInstanceState) {
         super.onViewStateRestored(savedInstanceState);
     }
-
-
 
     class ViewPagerAdapter extends FragmentPagerAdapter {
         private final List<Fragment> mFragmentList = new ArrayList<>();
